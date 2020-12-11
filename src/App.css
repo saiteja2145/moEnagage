@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+*,
+*::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search__box {
+  width: 80%;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-family: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pagenation__container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: auto;
+}
+
+.pagenation__container button {
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  border-right: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.pagenation__container button:hover {
+  transform: translate(-1px, -1px);
+  background-color: #1a73e8;
+}
+
+.active {
+  background-color: #1a73e8;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.table {
+  width: 90%;
+  margin: 1rem;
+  border-collapse: collapse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table tr {
+  padding: 1rem;
+}
+
+.table tr td,
+.table tr th {
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.name {
+  color: #1a73e8;
+  font-weight: 600;
 }
